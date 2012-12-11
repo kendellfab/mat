@@ -1,0 +1,6 @@
+#! /bin/bash
+
+adb shell rm /mnt/sdcard/iFit/images/*
+adb shell rm /mnt/sdcard/iFit/wpl/*
+adb shell rm /mnt/sdcard/iFit/jsonmanifest/*
+adb shell rmdir /mnt/sdcard/iFit/jsonmanifest

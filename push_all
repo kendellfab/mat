@@ -1,0 +1,14 @@
+#! /bin/bash
+
+#Get source directory
+SOURCE=$1
+#Get destination directory
+DESTINATION=$2
+
+for entry in $SOURCE/*
+do
+  if [ -f $entry ];then
+    BASENAME=`basename $entry`
+    adb push $entry "$DESTINATION/$BASENAME"
+  fi
+done

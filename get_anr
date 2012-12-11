@@ -1,0 +1,5 @@
+#! /bin/bash
+
+adb pull /data/anr/traces.txt traces.txt
+adb shell rm /data/anr/traces.txt
+less traces.txt

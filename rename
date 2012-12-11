@@ -1,0 +1,10 @@
+#! /bin/bash
+
+if [ $# == 0 ]
+then
+	adb shell mv /mnt/sdcard/iFit/videos/hana.m4v /mnt/sdcard/iFit/videos/hana.m4v.bak
+else
+	adb shell mv /mnt/sdcard/iFit/videos/hana.m4v.bak /mnt/sdcard/iFit/videos/hana.m4v
+fi
+
+adb shell ls /mnt/sdcard/iFit/videos
